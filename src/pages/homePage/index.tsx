@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import AboutUs from "../../components/aboutus/aboutUs";
 import Banner from "../../components/banner";
 import { Spacer } from "../../components/common/spacer";
@@ -11,20 +12,46 @@ import TrustUs from "../../components/trustUs/trustUs";
 import WhyUs from "../../components/whyUs/whyUs";
 
 const HomePage = () => {
+  const aboutTargetRef = useRef<HTMLDivElement>(null);
+  const serviceTargetRef = useRef<HTMLDivElement>(null);
+  const testimonyTargetRef = useRef<HTMLDivElement>(null);
+
+  const onScrollToAbout = () => {
+    if (aboutTargetRef.current) {
+      aboutTargetRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const onScrollToService = () => {
+    if (serviceTargetRef.current) {
+      serviceTargetRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const onScrollToTestimony = () => {
+    if (testimonyTargetRef.current) {
+      testimonyTargetRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <FirstTopBar />
-      <Navbar />
-      <Banner />
+      <Navbar
+        aboutScroll={onScrollToAbout}
+        serviceScroll={onScrollToService}
+        testimonyScroll={onScrollToTestimony}
+      />
+      <Banner scrollToService={onScrollToService} />
       <Spacer />
-      <Services />
+      <Services serviceRef={serviceTargetRef} />
       <Spacer />
-      <AboutUs />
+      <AboutUs aboutRef={aboutTargetRef} />
       <Spacer />
       <WhyUs />
       <TrustUs />
       <Spacer />
-      <Testimonies />
+      <Testimonies testimonyRef={testimonyTargetRef} />
       <Spacer />
       <CompanyInfo />
       <Footer />

@@ -68,12 +68,17 @@ const Testimony = ({
   );
 };
 
-const Testimonies = () => {
+const Testimonies = ({
+  testimonyRef,
+}: {
+  testimonyRef: React.RefObject<HTMLDivElement>;
+}) => {
   const theme = useTheme();
   const smallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Stack
+      ref={testimonyRef}
       direction={"column"}
       p={2}
       justifyContent={"center"}
