@@ -11,25 +11,25 @@ import TrustUs from "../../components/trustUs/trustUs";
 import WhyUs from "../../components/whyUs/whyUs";
 
 const HomePage = () => {
-    return (
-        <>
-            <FirstTopBar />
-            <Navbar/>
-            <Banner/>
-            <Spacer/>
-            <Services/>
-            <Spacer/>
-            <AboutUs/>
-            <Spacer/>
-            <WhyUs/>
-            <TrustUs/>
-            <Spacer/>
-            <Testimonies/>
-            <Spacer/>
-            <CompanyInfo/>
-            <Footer/>
-        </>
-    )
+  return (
+    <>
+      <FirstTopBar />
+      <Navbar />
+      <Banner />
+      <Spacer />
+      <Services />
+      <Spacer />
+      <AboutUs />
+      <Spacer />
+      <WhyUs />
+      <TrustUs />
+      <Spacer />
+      <Testimonies />
+      <Spacer />
+      <CompanyInfo />
+      <Footer />
+    </>
+  );
 };
 
 export default HomePage;
