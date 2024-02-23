@@ -8,10 +8,17 @@ import {
 } from "@mui/material";
 import { BannerContainer, BannerContent } from "../../styles/banner";
 import { colors } from "../../styles/theme";
+import { useNavigate } from "react-router-dom";
 
 const Banner = ({ scrollToService }: { scrollToService: () => void }) => {
   const theme = useTheme();
   const match = useMediaQuery(theme.breakpoints.down("md"));
+
+  const navigate = useNavigate();
+
+  const navigateTo = (path : string) => {
+    navigate(path);
+  }
 
   return (
     <BannerContainer match={match}>
@@ -71,6 +78,7 @@ const Banner = ({ scrollToService }: { scrollToService: () => void }) => {
                   color: colors.white,
                 },
               }}
+              onClick={()=>navigateTo('/contact_us')}
             >
               CONTACT US
             </Button>

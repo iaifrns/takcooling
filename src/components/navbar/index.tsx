@@ -2,6 +2,7 @@ import { AppBar, Box, Stack, Toolbar, Typography } from "@mui/material";
 import { Logo } from "../common/logo";
 import { Link } from "../common/link";
 import { colors } from "../../styles/theme";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({
   aboutScroll,
@@ -18,6 +19,12 @@ const Navbar = ({
       backgroundColor: colors.primary,
       color: colors.white,
     },
+  };
+
+  const navigate = useNavigate();
+
+  const navigateTo = (path: string) => {
+    navigate(path);
   };
 
   return (
@@ -38,16 +45,17 @@ const Navbar = ({
             flex={4}
             justifyContent={"space-evenly"}
           >
-            <Link>HOME</Link>
+            <Link onClick={() => navigateTo("/")}>HOME</Link>
             <Link onClick={aboutScroll}>ABOUT</Link>
             <Link onClick={serviceScroll}>SERVICES</Link>
             <Link onClick={testimonyScroll}>Testimonies</Link>
-            <Link>CONTACT US</Link>
+            <Link onClick={() => navigateTo("/contact_us")}>CONTACT US</Link>
           </Box>
           <Box
             sx={{ display: { sm: "none", md: "flex", xs: "none" } }}
             flex={2}
             justifyContent={"center"}
+            onClick={() => navigateTo("/contact_us")}
           >
             <Typography variant="body2" p={1} border={1} sx={style}>
               CONTACT US NOW!
