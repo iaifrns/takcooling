@@ -16,7 +16,7 @@ const Navbar = ({
   const style = {
     cursor: "pointer",
     "&:hover": {
-      backgroundColor: colors.primary,
+      backgroundColor: colors.text,
       color: colors.white,
     },
   };
