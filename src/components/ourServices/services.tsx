@@ -1,5 +1,5 @@
 import { Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { RedLine } from "../../styles/theme";
+import { colors, RedLine } from "../../styles/theme";
 import { Service } from "./service";
 import img1 from "../../assets/imgM3.jpg";
 import img2 from "../../assets/imageBg1.png";
@@ -22,7 +22,7 @@ const Services = ({
       alignItems={"center"}
       gap={3}
     >
-      <Typography color={"secondary"}> OUR SERVICES </Typography>
+      <Typography color={colors.primary}> OUR SERVICES </Typography>
       <Typography
         variant={smallScreen ? "h5" : "h4"}
         fontWeight={"bold"}

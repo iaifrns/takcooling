@@ -29,7 +29,7 @@ const AboutUs = ({
       p={2}
     >
       <Typography
-        color={"secondary"}
+        color={colors.primary}
         mb={2}
         sx={{ display: { sm: "flex", md: "none" } }}
         width={"90%"}

@@ -1,10 +1,12 @@
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { colors } from "../../styles/theme";
+import { phoneNumber } from "../../constants";
 
 export default function Footer() {
   const sendToWhatsapp = () => {
-    const phone = "+447877020977";
+    const phone = phoneNumber;
     window.location.href = `whatsapp://send?phone=${phone}`;
   };
 
@@ -14,7 +16,7 @@ export default function Footer() {
   return (
     <Box
       component="footer"
-      sx={{ bgcolor: "#02132b", py: 6 }}
+      sx={{ bgcolor: colors.primary, py: 6 }}
       width="100%"
       display={"flex"}
       flexDirection={"column"}

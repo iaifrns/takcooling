@@ -1,16 +1,18 @@
 import { Box, createTheme, styled } from "@mui/material";
 
 export const colors = {
-    primary : 'rgb(5, 6, 43)',
-    secondary : '#f71735',
+    primary : 'rgb(6, 8, 97)',
+    secondary : 'rgb(77, 77, 253)',
     backgroundColor: '#0b0c26',
-    white : '#fff'
+    backgroundColorBluer: 'rgb(0, 0, 43,0.2)',
+    white : '#fff',
+    text: '#ff751f'
 };
 
 export const RedLine = styled(Box)({
     width : 50,
     height : 5,
-    backgroundColor : 'red'
+    backgroundColor : colors.text
 })
 
 const theme = createTheme({

@@ -16,9 +16,9 @@ const Banner = ({ scrollToService }: { scrollToService: () => void }) => {
 
   const navigate = useNavigate();
 
-  const navigateTo = (path : string) => {
+  const navigateTo = (path: string) => {
     navigate(path);
-  }
+  };
 
   return (
     <BannerContainer match={match}>
@@ -39,14 +39,14 @@ const Banner = ({ scrollToService }: { scrollToService: () => void }) => {
           </Typography>
           <Typography
             variant={match ? "h4" : "h2"}
-            color={"secondary"}
+            color={colors.text}
             fontWeight={"bold"}
             textAlign={match ? "center" : "left"}
           >
             We Provide Financial Planning
           </Typography>
           <Typography
-            textAlign={"center"}
+            textAlign={"center"}  
             variant="body1"
             sx={{ display: { xs: "none", sm: "block" } }}
             color={"primary"}
@@ -78,7 +78,7 @@ const Banner = ({ scrollToService }: { scrollToService: () => void }) => {
                   color: colors.white,
                 },
               }}
-              onClick={()=>navigateTo('/contact_us')}
+              onClick={() => navigateTo("/contact_us")}
             >
               CONTACT US
             </Button>

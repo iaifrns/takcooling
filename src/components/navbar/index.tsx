@@ -1,8 +1,8 @@
 import { AppBar, Box, Stack, Toolbar, Typography } from "@mui/material";
-import { Logo } from "../common/logo";
-import { Link } from "../common/link";
-import { colors } from "../../styles/theme";
 import { useNavigate } from "react-router-dom";
+import logo from '../../assets/Subject.png';
+import { colors } from "../../styles/theme";
+import { Link } from "../common/link";
 
 const Navbar = ({
   aboutScroll,
@@ -38,7 +38,7 @@ const Navbar = ({
           color={"black"}
         >
           <Box display={"flex"} flex={2} justifyContent={"center"}>
-            <Logo>Tackcooling</Logo>
+            <img src={logo} alt={logo} width={'150px'} />
           </Box>
           <Box
             sx={{ display: { sm: "none", md: "flex", xs: "none" } }}
