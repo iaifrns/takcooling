@@ -19,22 +19,22 @@ const TrustUs = () => {
 
             <Stack direction={ smallScreen ? 'column' : 'row'} width={'80%'}>
                 <InfoContainer>
-                    <Icon icon="akar-icons:light-bulb" width={60} color={colors.secondary} />
+                    <Icon icon="akar-icons:light-bulb" width={60} color={colors.text} />
                     <Typography variant="h2" fontWeight={'bold'}>98%</Typography>
                     <Typography fontWeight={'bold'}>Casses solved</Typography>
                 </InfoContainer>
                 <InfoContainer>
-                    <Icon icon="ph:projector-screen-chart-light" width={60} color={colors.secondary} />
+                    <Icon icon="ph:projector-screen-chart-light" width={60} color={colors.text} />
                     <Typography variant="h2"  fontWeight={'bold'}>252</Typography>
                     <Typography fontWeight={'bold'}>Projects</Typography>
                 </InfoContainer>
                 <InfoContainer>
-                    <Icon icon="streamline:happy-face" width={60} color={colors.secondary} />
+                    <Icon icon="streamline:happy-face" width={60} color={colors.text} />
                     <Typography variant="h2" fontWeight={'bold'}>99%</Typography>
                     <Typography fontWeight={'bold'}>Happy Clients</Typography>
                 </InfoContainer>
                 <InfoContainer>
-                    <Icon icon="game-icons:profit" width={60} color={colors.secondary} />
+                    <Icon icon="game-icons:profit" width={60} color={colors.text} />
                     <Typography variant="h2" fontWeight={'bold'}>94%</Typography>
                     <Typography fontWeight={'bold'}>Yearly Profit</Typography>
                 </InfoContainer>

@@ -82,19 +82,19 @@ const AboutUs = ({
         </Typography>
         <Grid container justifyContent={"center"} width={"90%"}>
           <Grid xs={12} md={6} display={"flex"} alignItems={"center"}>
-            <Icon icon="gg:arrow-right-o" color={colors.secondary} />
+            <Icon icon="gg:arrow-right-o" color={colors.text} />
             <Typography ml={2}>Open From 8Am To 6Pm</Typography>
           </Grid>
           <Grid xs={12} md={6} display={"flex"} alignItems={"center"}>
-            <Icon icon="gg:arrow-right-o" color={colors.secondary} />
+            <Icon icon="gg:arrow-right-o" color={colors.text} />
             <Typography ml={2}>Open Whatsapp Contact</Typography>
           </Grid>
           <Grid xs={12} md={6} display={"flex"} alignItems={"center"}>
-            <Icon icon="gg:arrow-right-o" color={colors.secondary} />
+            <Icon icon="gg:arrow-right-o" color={colors.text} />
             <Typography ml={2}>An Email For Contact</Typography>
           </Grid>
           <Grid xs={12} md={6} display={"flex"} alignItems={"center"}>
-            <Icon icon="gg:arrow-right-o" color={colors.secondary} />
+            <Icon icon="gg:arrow-right-o" color={colors.text} />
             <Typography ml={2}>Avelable In London</Typography>
           </Grid>
         </Grid>

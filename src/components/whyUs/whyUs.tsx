@@ -45,7 +45,7 @@ const WhyUs = () => {
       >
         <Stack
           direction={"column"}
-          bgcolor={"rgb(5, 6, 43,0.7)"}
+          bgcolor={"rgb(5, 6, 43,0.6)"}
           p={2}
           justifyContent={"center"}
           alignItems={"center"}
@@ -75,7 +75,7 @@ const WhyUs = () => {
               <Icon
                 icon="mdi:performance"
                 width={40}
-                color={colors.secondary}
+                color={colors.text}
               />
               <Typography variant="h6" fontWeight={"bold"} mt={1} mb={1}>
                 Expertise Across the Board:
@@ -90,7 +90,7 @@ const WhyUs = () => {
               <Icon
                 icon="fluent-mdl2:product-variant"
                 width={40}
-                color={colors.secondary}
+                color={colors.text}
               />
               <Typography variant="h6" fontWeight={"bold"} mt={1} mb={1}>
                 Quality Products:
@@ -107,7 +107,7 @@ const WhyUs = () => {
               <Icon
                 icon="carbon:service-id"
                 width={40}
-                color={colors.secondary}
+                color={colors.text}
               />
               <Typography variant="h6" fontWeight={"bold"} mt={1} mb={1}>
                 Prompt and Reliable Service:
@@ -123,7 +123,7 @@ const WhyUs = () => {
               <Icon
                 icon="streamline:information-desk-customer"
                 width={40}
-                color={colors.secondary}
+                color={colors.text}
               />
               <Typography variant="h6" fontWeight={"bold"} mt={1} mb={1}>
                 Customer Satisfaction Guaranteed:
