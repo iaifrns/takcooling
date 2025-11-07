@@ -45,7 +45,7 @@ const CompanyInfo = ({ match }: { match: boolean }) => {
           <Icon icon="subway:location" />
         </Avatar>
         <Typography textAlign={"center"}>
-          London Postcode Se15 6rs <br /> Rue 149 glengall road
+          London Postcode Se15 6rs <br /> Glengall road
         </Typography>
       </Box>
       <Box

@@ -50,9 +50,7 @@ const CompanyInfo = () => {
           <Typography variant="h6" fontWeight={"bold"}>
             Our Address
           </Typography>
-          <Typography textAlign={"center"}>
-            London, Postcode Se15 6rs, Rue 149 glengall road
-          </Typography>
+          <Typography textAlign={"center"}>London, Postcode Se15 6rs Glengall road</Typography>
         </Box>
         <Box
           display={"flex"}
@@ -64,7 +62,7 @@ const CompanyInfo = () => {
           <Typography variant="h6" fontWeight={"bold"}>
             Talk To Expert
           </Typography>
-          <Typography>whatsapp & normal calls 00447877020977</Typography>
+          <Typography>whatsapp & normal calls +447877020977</Typography>
         </Box>
         <Box
           display={"flex"}

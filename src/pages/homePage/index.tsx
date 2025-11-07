@@ -11,6 +11,16 @@ import FirstTopBar from "../../components/topbar";
 import TrustUs from "../../components/trustUs/trustUs";
 import WhyUs from "../../components/whyUs/whyUs";
 
+export const handleWhatsapp = () => {
+  const message = "";
+  const phone = "+447877020977"
+  const encodedMessage = encodeURIComponent(message || "");
+  const whatsappUrl = `https://wa.me/${phone}${
+    message ? `?text=${encodedMessage}` : ""
+  }`;
+  window.open(whatsappUrl, "_blank");
+};
+
 const HomePage = () => {
   const aboutTargetRef = useRef<HTMLDivElement>(null);
   const serviceTargetRef = useRef<HTMLDivElement>(null);

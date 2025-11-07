@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { colors } from "../../styles/theme";
 import { phoneNumber } from "../../constants";
+import { handleWhatsapp } from "../../pages/homePage";
 
 export default function Footer() {
   const sendToWhatsapp = () => {
@@ -57,7 +58,7 @@ export default function Footer() {
               Postcode Se15 6rs
             </Typography>
             <Typography variant="body2" color={"lightgray"} mb={1}>
-              Rue 149 glengall road{" "}
+              Glengall road{" "}
             </Typography>
           </Grid>
 
@@ -65,7 +66,7 @@ export default function Footer() {
             <Typography variant="h6" color={"white"} fontWeight={"bold"} mb={3}>
               Say Hello
             </Typography>
-            <Typography variant="body2" color={"lightgray"} mb={1}>
+            <Typography variant="body2" color={"lightgray"} mb={1} onClick = {handleWhatsapp}>
               00447877020977
             </Typography>
             <Typography variant="body2" color={"lightgray"} mb={1}>

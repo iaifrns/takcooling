@@ -2,6 +2,7 @@ import { AppBar, Typography } from "@mui/material";
 import { LeftBox, RightBox, RightBoxContent, TopBarContainer, TopBarIconButton } from "../../styles/firstTopbar";
 import { email, opening, phoneNumber } from "../../constants";
 import { Icon } from '@iconify/react';
+import { handleWhatsapp } from "../../pages/homePage";
 
 const FirstTopBar = () => {
     return (
@@ -20,14 +21,14 @@ const FirstTopBar = () => {
                     </RightBoxContent>
                     <RightBoxContent>
                         <Icon icon="mingcute:phone-fill" fontSize={'medium'} />
-                        <Typography fontSize={'small'} ml={1}>{phoneNumber}</Typography>
+                        <Typography fontSize={'small'} ml={1} onClick={handleWhatsapp}>{phoneNumber}</Typography>
                     </RightBoxContent>
                     <RightBoxContent>
                         <TopBarIconButton>
                             <Icon icon="jam:facebook" fontSize={'medium'} />
                         </TopBarIconButton>
-                        <TopBarIconButton>
-                            <Icon icon="uil:twitter" fontSize={'medium'} />
+                        <TopBarIconButton onClick={handleWhatsapp}>
+                            <Icon icon="logos:whatsapp-icon" fontSize={'medium'} />
                         </TopBarIconButton>
                         <TopBarIconButton>
                             <Icon icon="streamline:gmail-solid" fontSize={'medium'} />

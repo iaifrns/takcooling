@@ -107,13 +107,13 @@ const AboutUs = ({
         >
           <Box p={2} borderRight={"1px solid lightgray"}>
             <Typography variant="h6" fontWeight={"bold"}>
-              Herve Takue
+              Herve Takou
             </Typography>
             <Typography>pdg takcooling</Typography>
           </Box>
           <Box p={2}>
             <Typography variant="h6" fontWeight={"bold"}>
-              00447877020977
+              +447877020977
             </Typography>
             <Typography>Call to ask any question</Typography>
           </Box>
