@@ -72,11 +72,7 @@ const WhyUs = () => {
             alignItems={"center"}
           >
             <Grid xs={11} sm={8} md={5} m={2} color={colors.white}>
-              <Icon
-                icon="mdi:performance"
-                width={40}
-                color={colors.text}
-              />
+              <Icon icon="mdi:performance" width={40} color={colors.text} />
               <Typography variant="h6" fontWeight={"bold"} mt={1} mb={1}>
                 Expertise Across the Board:
               </Typography>
@@ -104,11 +100,7 @@ const WhyUs = () => {
               </Typography>
             </Grid>
             <Grid xs={11} sm={8} md={5} m={2} color={colors.white}>
-              <Icon
-                icon="carbon:service-id"
-                width={40}
-                color={colors.text}
-              />
+              <Icon icon="carbon:service-id" width={40} color={colors.text} />
               <Typography variant="h6" fontWeight={"bold"} mt={1} mb={1}>
                 Prompt and Reliable Service:
               </Typography>
